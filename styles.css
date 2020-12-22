@@ -1,9 +1,20 @@
-* {
-  background-color: #cfcfcf;
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #cfcfcf;
   font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+nav {
+  height: 3rem;
 }
 
 .nav-center {
@@ -13,6 +24,7 @@
   text-align: center;
   padding: 20px;
   box-shadow: border-box;
+  width: 100%;
 }
 
 .nav-links {
@@ -31,9 +43,28 @@ li {
   font-size: 30px;
 }
 
-
+h1,
+h2,
+h3,
 h4 {
   font-size: 30px;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
 }
 
 .container {
@@ -63,4 +94,9 @@ h4 {
   box-shadow: 0 6px 8px rgba(104, 104, 104, 0.8);
   cursor: pointer;
     /* background-color: yellowgreen; */
+}
+
+main {
+  display: grid;
+  place-items: center;
 }
